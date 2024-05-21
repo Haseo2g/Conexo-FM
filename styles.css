@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+}
+
+#word-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.word, .group-word {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.group-word {
+    grid-column: span 4;
+    text-align: center;
+}
+
+.selected {
+    background-color: #87CEEB;
+}
+
+.correct-0 {
+    background-color: #FFDDC1;
+}
+
+.correct-1 {
+    background-color: #FFC1C1;
+}
+
+.correct-2 {
+    background-color: #FFF1C1;
+}
+
+.correct-3 {
+    background-color: #C1FFC1;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+#attempts {
+    margin-top: 10px;
+    font-size: 18px;
+}
