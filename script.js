@@ -1,16 +1,16 @@
 document.addEventListener('DOMContentLoaded', () => {
     const words = [
         "Zarigun", "Bone Mouse", "Genin", "Dark Magician", 
-        "Mega Thunderball", "Nemuriko", "Petit Dragon", "Psychic Kappa", 
+        "Hourglass of Life", "Nemuriko", "Petit Dragon", "Psychic Kappa", 
         "Skull Knight", "Meteor B. Dragon", "Crawling Dragon", "Mystical Elf", 
-        "Weather Control", "Kaminari Attack", "Kaminarikozou", "Oscillo Hero #2"
+        "Guardian of the Labyrinth", "Kaminari Attack", "Kaminarikozou", "Oscillo Hero #2"
     ];
 
     const correctGroups = [
         ["Zarigun","Bone Mouse","Genin","Dark Magician"],
-        ["Mega Thunderball","Nemuriko","Petit Dragon","Psychic Kappa"],
+        ["Hourglass of Life","Nemuriko","Petit Dragon","Psychic Kappa"],
         ["Skull Knight","Meteor B. Dragon","Crawling Dragon","Mystical Elf"],
-        ["Weather Control","Kaminari Attack","Kaminarikozou","Oscillo Hero #2"]
+        ["Guardian of the Labyrinth","Kaminari Attack","Kaminarikozou","Oscillo Hero #2"]
     ];
 
     const groupReasons = [
@@ -112,14 +112,14 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-	shareButton.addEventListener('click', () => {
-	    navigator.clipboard.writeText(shareString)
-	        .then(() => {
-	            alert('Resultado copiado para a área de transferência!');
-	        })
-	        .catch(err => {
-	            console.error('Erro ao copiar: ', err);
-	            alert('Falha ao copiar. Por favor, tente novamente.');
-	        });
-	});
+    shareButton.addEventListener('click', () => {
+        navigator.clipboard.writeText(shareString)
+            .then(() => {
+                alert('Resultado copiado para a área de transferência!');
+            })
+            .catch(err => {
+                console.error('Erro ao copiar: ', err);
+                alert('Falha ao copiar. Por favor, tente novamente.');
+            });
+    });
 });
