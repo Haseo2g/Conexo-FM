@@ -1,23 +1,23 @@
 document.addEventListener('DOMContentLoaded', () => {
     const words = [
-        "Zarigun", "Bone Mouse", "Genin", "Dark Magician", 
-        "Hourglass of Life", "Nemuriko", "Petit Dragon", "Psychic Kappa", 
-        "Skull Knight", "Meteor B. Dragon", "Crawling Dragon", "Mystical Elf", 
-        "Guardian of the Labyrinth", "Kaminari Attack", "Kaminarikozou", "Oscillo Hero #2"
+        "Nemuriko", "Dryad", "Water Element", "Skelengel", 
+        "Dragon Treasure", "Dark Energy", "Horn of Light", "Beast Fangs", 
+        "Malevolent Nuzzler", "Cyber Shield", "Widespread Ruin", "Crush Card", 
+        "Ancient Jar", "Fiend's Hand", "LALA Li-oon", "Raigeki"
     ];
 
     const correctGroups = [
-        ["Zarigun","Bone Mouse","Genin","Dark Magician"],
-        ["Hourglass of Life","Nemuriko","Petit Dragon","Psychic Kappa"],
-        ["Skull Knight","Meteor B. Dragon","Crawling Dragon","Mystical Elf"],
-        ["Guardian of the Labyrinth","Kaminari Attack","Kaminarikozou","Oscillo Hero #2"]
+        ["Nemuriko", "Dryad", "Water Element", "Skelengel"],
+        ["Dragon Treasure", "Dark Energy", "Horn of Light", "Beast Fangs"],
+        ["Malevolent Nuzzler", "Cyber Shield", "Widespread Ruin", "Crush Card"],
+        ["Ancient Jar", "Fiend's Hand", "LALA Li-oon", "Raigeki"]
     ];
 
     const groupReasons = [
-        "Cartas memes",
-        "Custam 30 dinheiros",
-        "Dropam no Meadow",
-        "Pluto de Starguardian"
+        "Equipam Book of Secret Arts",
+        "Equips de THTD",
+        "Atec Nitemare",
+        "Deck inicial"
     ];
 
     const groupColors = ["🟩", "🟧", "🟦", "🟪"];
@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', () => {
             shareString += groupColors[correctCount - 1];
 
             if (correctCount === 4) {
-                shareString += `\nJoguei conexo FM ${new Date().toLocaleDateString()} e consegui em ${attempts} tentativas.\n`;
+                shareString += `\n\nJoguei conexo FM ${new Date().toLocaleDateString()} e consegui em ${attempts} tentativas.`;
                 shareButton.style.display = 'block';
             }
         } else {
